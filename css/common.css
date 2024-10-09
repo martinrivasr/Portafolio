@@ -19,4 +19,10 @@
     opacity: 1;
     font-family: var(--main-font-family);
   }
-  
+
+  *{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0
+
+  }
