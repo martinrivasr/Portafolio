@@ -2,7 +2,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background: #fbc02d;
+      /*  background: #fbc02d;*/
       }
   
       
@@ -10,21 +10,21 @@
         width: 90%;
         display: flex;
       /*  justify-content: space-between;*/
-        background: lightcoral;
+       /* background: lightcoral;*/
         margin: 1px;
-        height: 10vh;  
+        height: 10%;  
         align-items: center;
-        color: white;
+      /*  color: white;*/
       }
   
 
       .contenido {
         display: flex;
-        height: 80%; 
+        height: 60%; 
       }
   
       main {
-        background-color: lightblue;
+       /* background-color: lightblue;*/
         flex: 1;  
         display: flex;
         align-items: center;
@@ -32,7 +32,7 @@
       }
   
       aside {
-        background-color: #405274;
+      /*  background-color: #405274; */
         width: 70%; 
         display: flex;
         align-items: center;
@@ -41,7 +41,7 @@
       }
   
       footer {
-        background-color: blueviolet;
+       /* background-color: blueviolet;*/
         height: 10%;  
         display: flex;
         align-items: center;

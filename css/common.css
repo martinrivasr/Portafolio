@@ -3,26 +3,24 @@
     --main-brand-color: #e50914;
     --main-brand-color-light: #e44c54;
     --secondary-brand-color: #0e1b4f;
-    --main-text-color: #FFF;
+    --main-text-color: #999;
+    --menu-text-color: #FFF;
     --border-color: #4b5563;
     --input-bg-color: #333;
     --main-font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 20px;
   }
   
-  .main-bg {
-    background-color: rgb(0, 0, 0);
-    background-color: #3c5aa0;
-    background-color: #000;
-    background-color: var(--bg-color);
+  .header {
     color: var(--main-text-color);
     opacity: 1;
     font-family: var(--main-font-family);
+    font-size: 20px;
   }
 
-  *{
-    font-family: "Roboto";
-    margin: 0;
-    padding: 0
 
+  *{
+    font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }

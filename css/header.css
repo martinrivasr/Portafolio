@@ -1,17 +1,13 @@
-*{
-    font-family: "Roboto";
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
 
   .header{
     position: relative;
+    z-index: 2;
+    top: 0;
     width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /*background: #4527a0;*/
     padding: 0.25px;
     transition: 0.3s;
 }
@@ -19,16 +15,18 @@
 .logo {
     width: auto; 
     height: 150%; 
+    opacity: 0.5;
 }
 
 .logo img {
-    height: 100%; /* Ocupará toda la altura disponible */
-    width: auto; /* Mantendrá la proporción original */
-    object-fit: contain; /* Ajusta el logo sin deformarlo */
+    height: 100%; 
+    width: auto;
+    object-fit: contain;
+
 }
 
 .logo a img {
-    display: block; 
+    display: inline-block; 
     width: auto; 
     position:relative;
     left: 0;
@@ -40,37 +38,149 @@
     border-color: white;
 }
 
-.navegation  {
+
+.navegacion {
+    border: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-}  
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1;
-    transition: 0.5s;
+    width: 100%; 
+    padding: 0 20px; 
+    height: 50%;
 }
+
+.menu {
+    background-color: RGB(4, 6, 81, 0.7);
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1; 
+    max-width: 860px;
+    height: 100%;
+}
+
+.language {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin-right: 5px;
+}
+
+.language-btn {
+    background-color: RGB(4, 6, 81, 0.7);
+    color: var(--menu-text-color);
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 90%;
+    margin-left: 5px;
+}
+
+.menulanguage {
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    display: none; 
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1000;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    right: 0; 
+    top: 50px;
+}
+
+
+.contact{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+    text-decoration: none;
+
+
+}
+
+
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color:rgb(115 215 248);
+    padding: 10px 15px;
+    font-size: 20px;
+    height: auto;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-position 0.3s ease;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, rgb(115, 215, 248) 50%, RGB(4, 6, 81) 50%);
+}
+
+.btn-primary:hover{
+    background-position: -100% 0; 
+    color: white;
+}
+.correo-icon {
+    margin-left: 5px;
+    padding-top: 2px;
+    width: 30px; 
+    height: auto;
+}
+
 .menu li {
     list-style-type: none;
 }
 
+.menulanguage li {
+    padding: 10px;
+    list-style-type: none;
+}
+
 .menu li a {
-    color: #000;
+    color: white;
     text-decoration: none;
     display: block;
     padding: 40px 25px;
-    font-size: 18px;
-    line-height: 1;
+    font-size: 20px;
+    line-height: 0;
     transition: 0.3s;
 }
+
+.menulanguage li a {
+    color:var(main-text-color);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    line-height: 0;
+    transition: 0.3s;
+}
+
 
 .menu li a:hover{
     box-shadow: 0 -5px 0px #fff inset,
     500px 0 0 rgba(255, 255, 255, 0.03) inset;
     padding : 35px 25px 45px 25px;
+}
+
+
+
+.menulanguage li a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.language:hover .menulanguage {
+    display: block; 
 }
 
 .hamburguer {
@@ -119,17 +229,17 @@
 }
  
 
-.navegation input:checked ~ .hamburguer{
+.navegacion input:checked ~ .hamburguer{
     background: transparent;
 }
 
 
-.navegation input:checked ~ .hamburguer:before{
+.navegacion input:checked ~ .hamburguer:before{
     top:0;
     transform: rotate(-45deg);
     width: 30px;
 }
-.navegation input:checked ~ .hamburguer:after{
+.navegacion input:checked ~ .hamburguer:after{
     top: 0;
     transform: rotate(45deg);
     width: 30px;
@@ -137,7 +247,7 @@
 }
 
 
-.navegation input:checked ~ .menu {
+.navegacion input:checked ~ .menu {
     right: 0;
     box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
 }
@@ -157,8 +267,8 @@
         position: fixed;
         top: 0;
         right:-300px;
-       /* background: #4527a0;*/
-        width: 300px;
+        background: #4527a0;
+        width: 200px;   
         height: 100%;
         padding-top: 65px;
     }
@@ -168,51 +278,15 @@
     .menu li a,
     .menu li a:hover {
         padding: 30px;
-        font-size: 24px;
+        font-size: 15px;
+        color: white;
         box-shadow:  0 1px 0 rgba(255, 255, 255, 0.1) inset;
     }
-}
-
-
-
-
-/*
-.nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 60px;
-    justify-content: space-around; /* Espacio igual alrededor de cada elemento 
-    border: 1px solid;
-}
-
-
-.boton {
-    list-style: none;
-    border: 1px dotted;
-    margin-left: auto;  /* Empuja el botón hacia la derecha 
-    margin-right: auto;
-    padding: 0;
-}
-
-
-.navegation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav{
-    border:1px solid;
-    ul{
-        list-style:  none;
-        display: flex;
-        gap: 60px;
-        justify-content: space-around;
-        border: 2px double;
+    .curve video {
+        width: 100%;  
+        height: 100vh; 
+        object-fit: cover; 
     }
+
 }
 
-
-*/
