@@ -16,3 +16,12 @@
     object-fit: cover;
     clip-path: ellipse(150% 100% at 50% 0%);
 }
+
+@media screen and (max-width:992px){
+        .curve video {
+            height: 50vh; 
+            width: 100%;   
+            object-fit: cover;
+            
+}
+}

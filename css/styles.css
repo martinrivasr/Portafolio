@@ -3,6 +3,7 @@
         margin: 0;
         padding: 0;
       /*  background: #fbc02d;*/
+      background: url("/assets/flower-dots.svg");
       }
   
       
@@ -102,4 +103,10 @@
          margin: auto;
          height: 150px;
      }
+
+      html, body {
+          background-size: contain; 
+          background-position: top; 
+      }
+  
  }
