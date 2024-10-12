@@ -1,26 +1,75 @@
 :root {
-    --bg-color: #000;
-    --main-brand-color: #e50914;
-    --main-brand-color-light: #e44c54;
-    --secondary-brand-color: #0e1b4f;
-    --main-text-color: #999;
-    --menu-text-color: #FFF;
-    --border-color: #4b5563;
-    --input-bg-color: #333;
-    --main-font-family: "Roboto", Arial, Helvetica, sans-serif;
-  }
-  
-  .header {
-    color: var(--main-text-color);
-    opacity: 1;
-    font-family: var(--main-font-family);
-    font-size: 20px;
-  }
+    /* Colores */
+    --bg-color: #F0F2F5; /* Gris claro */
+    --primary-color: #1C1C1E; /* Negro/gris oscuro */
+    --secondary-color: #004F9F; /* Azul oscuro */
+    --accent-color: #1ABC9C; /* Turquesa */
+    --hover-color: #16A085; /* Turquesa un poco más oscuro para hover */
+    --text-color: #1C1C1E; /* Texto principal */
+    --menu-text-color: #FFFFFF; /* Texto del menú */
+    --menu-bg-color: #004F9F; /* Fondo del menú */
+    --menu-hover-color: rgba(255, 255, 255, 0.8); /* Hover en el menú */
+    --border-color: #B0BEC5; /* Bordes suaves */
+    --button-bg-color: #004F9F; /* Fondo del botón */
+    --button-hover-bg-color: #1ABC9C; /* Fondo del botón en hover */
+    --button-text-color: #FFFFFF; /* Texto de los botones */
+    --dropdown-bg-color: #004F9F; /* Fondo del menú desplegable */
+    --dropdown-hover-bg-color: #1ABC9C; /* Hover en el menú desplegable */
+    --dropdown-text-color: #FFFFFF; /* Texto del menú desplegable */
+
+    /* Tipografía */
+    --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    /* Tamaños de texto */
+    --font-size-base: 16px;  /* Tamaño base por defecto */
+    --font-size-h1: 2.5rem;  /* Encabezado principal */
+    --font-size-h2: 2rem;    /* Subencabezado */
+    --font-size-h3: 1.75rem; /* Encabezado menor */
+    --font-size-p: 1rem;     /* Texto normal */
+    --font-size-small: 0.875rem; /* Texto pequeño */
+    /* Alturas mínimas y máximas de contenedores */
+    --min-section-height: 300px;
+    --max-section-height: 800px;
+
+    /* Anchura de contenedores o columnas */
+    --container-width: 90%;
+    --container-max-width: 1400px;  /* Limita el ancho en pantallas grandes */
+}
 
 
-  *{
-    font-family: var(--main-font-family);
-    margin: 0;
+main {
     padding: 0;
-    box-sizing: border-box;
-  }
+    margin: 0;
+}
+
+header {
+    background-color: var(--menu-bg-color);
+    padding: 15px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: 0.3s;
+    height: 80px;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--menu-text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+

@@ -1,0 +1,159 @@
+.presentation{
+    display: block;
+    position: relative;
+    top: 105px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 110px);
+
+}
+
+.presentation .video,
+.presentation .banner {
+    width: 100%;
+    height: 50%;
+}
+
+.curve {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+.presentation .banner {
+    display: flex;
+    position: relative;
+}
+
+.banner {
+    width: 100%; /* Ancho completo del contenedor */
+    overflow: hidden; /* Ocultar contenido fuera de los límites del contenedor */
+    white-space: nowrap; /* Mantener todo el texto en una sola línea */
+    position: relative;
+    background-color: #F0F2F5; /* Fondo claro */
+}
+
+.banner .heading {
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    text-align: center;
+    overflow-wrap:break-word;
+}
+
+.heading p {
+    margin-top: 0;
+    font-size: 50px;
+    line-height: 1.7;
+    font-weight: bold;
+    color: var(--menu-bg-color);
+    width: 100%;
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.Supply-Chain {
+    margin: 15vh;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+    position: absolute;
+    right: 0;
+}
+
+.Supply-Chain span {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 50px;
+    color: var( --menu-bg-color);
+}
+
+.web {
+    margin: 30vh;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-right 20s linear infinite; 
+    position: absolute;
+    left: 0;
+}
+
+
+.web span {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 50px;
+    color: var( --menu-bg-color);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-200%); 
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(200%); 
+    }
+}
+
+
+@media screen and (max-width: 992px){
+    #presentation{
+        width: 100%;
+        height: calc(100vh - 110px);
+    }
+
+    .heading p {
+        margin: 0 10px 10px 0;
+        font-size: 30px;
+        max-width: auto;
+        margin: 30px auto;
+        line-height: 1.7;
+    }
+
+
+    .Supply-Chain span {
+        font-size: 25px;
+    }
+
+    .web span {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+.heading p {
+    font-size: 25px;
+}
+
+.curve {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: none;
+}
+}
+
+@media screen and (max-width:350px) {
+
+    .heading p {
+        font-size: 15px;
+    }
+    .Supply-Chain span {
+        font-size: 15px;
+    }
+
+    .web span {
+        font-size: 15px;
+    }
+    
+}

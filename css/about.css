@@ -1,0 +1,138 @@
+.about {
+    display: block;
+    position: relative;
+    padding: 60px 0; 
+    text-align: center;
+    width: 100%;
+    border: solid;
+    margin-top: 170px;
+}
+
+.picture-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture {
+    width: 200px;
+    height: 200px;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+h1 {
+    font-size: 35px; /* Disminuir el tamaño de la fuente */
+    margin-bottom: 10px; /* Reducir el margen inferior */
+    line-height: 1; /* Controlar la altura de la línea para reducir el espacio */
+    color: var(--secondary-color);
+}
+h2, h3 {
+    font-size: 30px; /* Ajustar el tamaño de las otras cabeceras */
+    margin-bottom: 10px;
+    line-height: .5;
+    unicode-bidi: isolate;
+    color: var(--secondary-color);
+}
+
+/* Ajustes para los párrafos */
+.Description {
+    font-size: 25px;
+    max-width: 60%;
+    margin: 30px auto;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 1200px){
+    .picture {
+        width: 150px;
+        height: 150px;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 1;
+    }
+    h2, h3{
+        font-size: 30px;
+        line-height: 1;
+    }
+    
+    .Description {
+        font-size: 25px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .picture {
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2, h3{
+        font-size:30px;
+    }
+    .Description {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 765px){
+    .picture {
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2, h3{
+        font-size:30px;
+    }
+    .Description {
+        font-size: 25px;
+    }
+    
+
+}
+
+@media screen and (max-width: 575px){
+    .picture {
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2, h3{
+        font-size:25px;
+    }
+    .Description {
+        font-size: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 350px){
+    .picture {
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h2, h3{
+        font-size:20px;
+    }
+    .Description {
+        font-size: 15px;
+    }
+
+}

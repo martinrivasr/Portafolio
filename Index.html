@@ -1,96 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout con % de altura</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/styles.css">
-<link rel="stylesheet" href="/css/header.css">
-<link rel="stylesheet" href="/css/video.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Menú Desplegable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/presentation.css">
+    <link rel="stylesheet" href="/css//about.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="navegation">
+            <div class="logo" id="logo">
+                <a href="#presentation">
+                    <img class="image" src="/assets/logo.png" alt="logo">
+                </a>
+            </div>
+            <input type="checkbox" class="toggle-menu" id="toggle">
+            <label for="toggle" class="hamburguer">
 
-  <header class="header">
-    <div class="logo">
-      
-      <a href="#">
-        <img class="image" src="/assets/logo.png" alt="">
-      </a>
-    </div>
+            </label>
 
-    
-    <div class ="navegacion">
-      <input type="checkbox" 
-      class="toggle-menu">
-        <div class="hamburguer">
-        </div>
-      <ul class="menu">
-        <li><a href="#">Acerca</a></li>
-        <li><a href="#">Experiencia</a></li>
-        <li><a href="#">Projectos</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Educacion</a></li>
-        <li><a href="#">Novedades</a></li>
-        <ul class="mobile">
-          <li class="contactmobile"><a href="#">Contacto</a></li>
-          <li class="Lengugemobile">
-            <a href="#" class="language-btn">Idioma</a>
-            <ul class="menulanguage">
-              <li><a href="#">English</a></li>
-              <li><a href="#">日本語</a></li>
-              <li><a href="#">中文</a></li>
+            <ul class="menu">
+                <li><a href="#about">Acerca</a></li>
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Educacion</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">
+                        <i class="fas fa-globe"></i> Idioma
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">
+                            <img src="/assets/mx.svg" alt="Español" class="flag-icon">
+                            Español
+                        </a>
+                        <a href="#">
+                            <img src="/assets/us.svg" alt="English" class="flag-icon">
+                            English
+                        </a>
+                        <a href="#">
+                            <img src="/assets/fr.svg" alt="Français" class="flag-icon">
+                            Français
+                        </a>
+                    </div>
+                </li>
+                
+                <li class="contact">
+                    <a href="" class="btn-contact">
+                        Contacto <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                
             </ul>
-        </ul>
-      </ul>
-    </div>
-    <div class="language">
-      <button class="language-btn">Language</button> 
-      <ul class="menulanguage">
-        <li><a href="#">English</a></li>
-        <li><a href="#">日本語</a></li>
-        <li><a href="#">中文</a></li>
-      </ul>
-    </div>
+        </nav>
+    </header>
 
-    <div class="contact">
-      <a href="#" class="btn-primary">
-        <span class="btn-text">Contacto</span>
-        <span class="btn-icon">
-            <svg class="correo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  fill="#FFF">
-              <path d="M172.31-180Q142-180 121-201q-21-21-21-51.31v-455.38Q100-738 121-759q21-21 51.31-21h615.38Q818-780 839-759q21 21 21 51.31v455.38Q860-222 839-201q-21 21-51.31 21H172.31ZM480-457.69 160-662.31v410q0 5.39 3.46 8.85t8.85 3.46h615.38q5.39 0 8.85-3.46t3.46-8.85v-410L480-457.69Zm0-62.31 313.85-200h-627.7L480-520ZM160-662.31V-720v467.69q0 5.39 3.46 8.85t8.85 3.46H160v-422.31Z">
-             </path>
-            </svg>
-        </span>
-        </a>
-    </div>
-
-  </header>
-
-  <div class="video">
-    <video autoplay loop class="curve">
-        <source src="/assets/home-video.mp4" type="video/mp4">
-    </video>
-  </div>
-
-
-  <div class="contenido">
     <main>
-      <p>Contenido principal (80%)</p>
+        <section class="presentation" id="presentation">
+            <div class="video">
+                <video autoplay loop class="curve">
+                    <source src="/assets/home-video.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="banner">
+                <div class="heading">
+                    <p class="ppttitle" id ="ppttitle">De la logística a la programación: Desarrollando soluciones web full stack</p>
+
+                <div class="Supply-Chain">
+                    <span>Supply Chain</span>
+                    <span>Warehousing</span>
+                    <span>Transportation</span>
+                    <span>Inventory</span>
+                    <span>Implementation</span>
+                    
+                    <span>couching</span>
+                </div>
+                <div class="web">
+                    <span>Web Design</span>
+                    <span>Programming</span>
+                    <span>WMS</span>
+                    <span>SAP</span>
+                    <span>BlueYonder</span>
+                </div>
+
+              </div>
+
+        </section>
+        <section class="about" id="about">
+            <h1>Bienvenido a mi portafolio</h1>
+            <div class="picture-profile">
+                <img  class="picture"src="/assets/pictureMRR.png" alt="">
+                
+              </div>
+            <h1 class="name">Martin Rivas</h1>
+            <h2 class="title">Supply Chain| WMS Implementation|Team Development |</h2>
+            <h2 class="title"> Coaching | Leadership |Web Desing| Keepcoding & BlueYonder Alumni</h2>
+            <h3 class="Heading"> De la logística a la programación: Desarrollando soluciones web full stack</h3>
+            <h4 ></h4>
+                <p class="Description">Con más de 20 años optimizando operaciones logísticas y cadenas de suministro, he decidido aplicar mi experiencia analítica y de resolución de problemas al mundo del desarrollo web. Actualmente me encuentro sumergido en un bootcamp full stack, donde estoy adquiriendo las habilidades necesarias para construir aplicaciones web robustas y escalables. Mi experiencia previa en programación de WMS me ha proporcionado una sólida base en la gestión de datos y la optimización de procesos, lo que me permite aportar una perspectiva única a mis proyectos.</p>
+            <a href="#" class="button">Ver más</a>
+        </section>
     </main>
-    <aside>
-      <p>Este es un aside</p>
-    </aside>
-  </div>
 
-  <footer>
-    <p>Footer (10%)</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
