@@ -1,7 +1,7 @@
 .presentation{
     display: block;
     position: relative;
-    top: 105px;
+    top:60px;
     left: 0;
     width: 100%;
     height: calc(100vh - 110px);
@@ -27,11 +27,11 @@
 }
 
 .banner {
-    width: 100%; /* Ancho completo del contenedor */
-    overflow: hidden; /* Ocultar contenido fuera de los límites del contenedor */
-    white-space: nowrap; /* Mantener todo el texto en una sola línea */
+    width: 100%; 
+    overflow: hidden; 
+    white-space: nowrap; 
     position: relative;
-    background-color: #F0F2F5; /* Fondo claro */
+    background-color: #F0F2F5; 
 }
 
 .banner .heading {
@@ -45,7 +45,7 @@
 .heading p {
     margin-top: 0;
     font-size: 50px;
-    line-height: 1.7;
+    line-height: 1;
     font-weight: bold;
     color: var(--menu-bg-color);
     width: 100%;
@@ -54,7 +54,7 @@
 }
 
 .Supply-Chain {
-    margin: 15vh;
+    margin: 20vh;
     display: inline-block;
     white-space: nowrap;
     animation: scroll-left 20s linear infinite;
@@ -104,6 +104,16 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .heading p {
+        font-size: 50px;  
+        margin-bottom: 20px;  
+        line-height: 1.2; 
+    }
+    .Supply-Chain span, .web span {
+        font-size: 40px;  
+    }
+}
 
 @media screen and (max-width: 992px){
     #presentation{
@@ -116,7 +126,7 @@
         font-size: 30px;
         max-width: auto;
         margin: 30px auto;
-        line-height: 1.7;
+        line-height: 1.2;
     }
 
 
@@ -146,14 +156,15 @@
 @media screen and (max-width:350px) {
 
     .heading p {
-        font-size: 15px;
+        font-size: 10px;
+        line-height: 1;
     }
     .Supply-Chain span {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .web span {
-        font-size: 15px;
+        font-size: 10px;
     }
     
 }

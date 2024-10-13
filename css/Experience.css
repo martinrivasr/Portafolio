@@ -1,0 +1,67 @@
+.experience{
+        margin-top:0;
+        height: calc(100vh - 110px);;
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 2fr;
+        border: solid;
+}
+
+.item  {
+    min-height: 40vh;
+    padding: 10px;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.tall{
+    grid-row: span 2;
+}
+
+
+
+.introduction{
+    width: 100%;
+    border: solid;
+    border-color: blueviolet;
+}
+
+.systems{
+    border: solid;
+    border-color: blue;
+}
+.erp{
+    border: solid;
+}
+.tecnologies{
+    border: solid;
+}
+
+.experience .Description {
+    font-size: 23px;
+    margin: 10px 0;
+    padding-top: 10px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.erp , .tecnologies{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    img {
+      width: 100%;
+    }
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 20px;
+      figure {
+        margin: 0;
+      }
+    }
+  }

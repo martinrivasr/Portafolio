@@ -1,17 +1,20 @@
+
 .navegation {
     display: flex;
     justify-content: space-between; 
-    width: 100%; 
-    height: 50%;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .navegation .logo img {
-    position: absolute;
-    left: 0;
+    position: relative;
+    left: -10px;
     top: 0;
     opacity: 0.7;
-    height: 110px;
-    width: 125px;
+    height: 60px;
+    width: 65px;
 }
 
 .menu {
@@ -19,6 +22,7 @@
     height: 100%;
     display: flex;
     right: 2%;
+    
 }
 
 nav ul {
@@ -26,6 +30,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    top: 0;
 }
 
 nav ul li {
@@ -36,19 +41,20 @@ nav ul li {
 nav ul li a {
     color: var(--menu-text-color);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 0px 0px;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav ul li a:hover {
     color: var(--menu-hover-color);
-    border-bottom: 2px solid var(--menu-hover-color);
-    box-shadow: 0 -5px 0px var(--menu-hover-color) inset, 200px 0 0 rgba(255, 255, 255, 0.03) inset;
+    border-bottom: 1px solid var(--menu-hover-color);
+  /*  box-shadow: 0 -5px 0px var(--menu-hover-color) inset, 200px 0 0 rgba(255, 255, 255, 0.03) inset; */
+    box-shadow: none;
 }
 
 
 nav ul li .dropdown-content a:hover {
-    /* Turquesa en hover para menú desplegable */
+
     background-color: var(--dropdown-hover-bg-color); 
 }
 
@@ -81,10 +87,10 @@ nav ul li:hover .dropdown-content {
 }
 
 .flag-icon {
-    width: 20px; /* Reduce el tamaño de la bandera */
+    width: 20px; 
     height: auto;
-    margin-right: 8px; /* Ajusta el espacio entre la bandera y el texto */
-    vertical-align: middle; /* Alinear la bandera con el texto */
+    margin-right: 8px; 
+    vertical-align: middle; 
 }
 
 .btn-contact {
@@ -110,10 +116,10 @@ nav ul li:hover .dropdown-content {
 }
 
 .btn-contact i {
-    margin-left: 8px; /* Añade un pequeño margen a la izquierda del icono */
+    margin-left: 8px; 
 }
 
-/* Estilos del menú hamburguesa */
+
 .hamburguer {
     position: absolute;
     width: 30px;
@@ -122,8 +128,8 @@ nav ul li:hover .dropdown-content {
     border-radius: 10px;
     cursor: pointer;
     z-index: 3;
-    right: 30px;
-    top: 40px;
+    right: 20px;
+    top: 10px;
     transition: 0.3s;
 }
 
@@ -158,7 +164,7 @@ nav ul li:hover .dropdown-content {
     right: 10px;
 }
 
-/* Estilos cuando el menú hamburguesa está activado */
+
 .navegation input:checked ~ .hamburguer {
     background: transparent;
 }
@@ -205,8 +211,91 @@ nav ul li:hover .dropdown-content {
     box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 1200px) {
+    .navegation {
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
 
+    .navegation .logo img {
+        height: 60px;
+        width: 65px;
+        left: -5;
+        top: -5;
+    }
 
+    .menu {
+        height: auto;
+        flex-direction: row;
+        right: 5%;
+    }
+
+    .menu li {
+        padding: 8px 15px;
+        font-size: 1.1rem;
+    }
+
+    .btn-contact {
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .navegation {
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+
+    .navegation .logo img {
+        height: 60px;
+        width: 65px;
+        left: -5;
+        top: -5;
+    }
+
+    .menu {
+        right: 5%;
+        height: auto;
+    }
+
+    nav ul {
+        justify-content: center; 
+    }
+
+    nav ul li {
+        padding: 8px 15px; 
+        font-size: 1.1rem; 
+    }
+
+    .btn-contact {
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+
+    .hamburguer {
+        right: 30px;
+        top: 10px;
+        width: 28px;
+        height: 3px;
+    }
+
+    .hamburguer:before,
+    .hamburguer:after {
+        width: 28px;
+    }
+
+    .hamburguer:before {
+        top: -8px;
+    }
+
+    .hamburguer:after {
+        top: 8px;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .hamburguer,
@@ -221,10 +310,10 @@ nav ul li:hover .dropdown-content {
     .menu {
         position: fixed;
         flex-direction: column;
-        top: 55px;
+        top: 42px;
         right: -300px;
         background: var(--menu-bg-color);
-        width: 250px;
+        width: 200px;
         height: 50%;
         transition: right 0.3s ease;
         padding-top: 15px;
@@ -233,6 +322,13 @@ nav ul li:hover .dropdown-content {
         align-items: flex-start;
         justify-content: flex-start;
     }
+
+
+    .menu li {
+        padding: 14px 0px;
+        font-size: 0.9rem; 
+    }
+
 
     .menu li.contact {
         order: 0; 
@@ -262,5 +358,78 @@ nav ul li:hover .dropdown-content {
 
     .navegation input:checked ~ .menu {
         right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hamburguer {
+        right: 15px;
+        top: 12px;
+        width: 22px;
+        height: 2.5px;
+    }
+
+    .hamburguer:before,
+    .hamburguer:after {
+        width: 22px;
+    }
+
+    .hamburguer:before {
+        top: -6px;
+    }
+
+    .hamburguer:after {
+        top: 6px;
+    }
+
+    .menu {
+        width: 150px; 
+        right: -300px;
+    }
+
+    .menu li {
+        padding: 12px 0px;
+        font-size: 0.9rem; 
+    }
+
+    .btn-contact {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hamburguer {
+        right: 20px;
+        top: 10px;
+        width: 20px;
+        height: 2px;
+    }
+
+    .hamburguer:before,
+    .hamburguer:after {
+        width: 20px;
+    }
+
+    .hamburguer:before {
+        top: -5px;
+    }
+
+    .hamburguer:after {
+        top: 5px;
+    }
+
+    .menu {
+        width: 120px; 
+        right: -380px;
+    }
+
+    .menu li {
+        padding: 10px 0px;
+        font-size: 0.85rem; 
+    }
+
+    .btn-contact {
+        padding: 5px 8px;
+        font-size: 0.85rem;
     }
 }

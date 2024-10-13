@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo con Menú Desplegable</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/presentation.css">
-    <link rel="stylesheet" href="/css//about.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <header class="header">
         <nav class="navegation">
             <div class="logo" id="logo">
-                <a href="#presentation">
+                <a href="">
                     <img class="image" src="/assets/logo.png" alt="logo">
                 </a>
             </div>
@@ -26,12 +29,10 @@
             </label>
 
             <ul class="menu">
-                <li><a href="#about">Acerca</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Educacion</a></li>
-                <li><a href="#">Novedades</a></li>
+                <li><a href="#presentation">Home</a></li>
+                <li><a href="#about">Acerca de mi</a></li>
+                <li><a href="/paginas/project.html">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">
                         <i class="fas fa-globe"></i> Idioma
@@ -45,7 +46,7 @@
                             <img src="/assets/us.svg" alt="English" class="flag-icon">
                             English
                         </a>
-                        <a href="#">
+                        <a href="/paginas/400.html">
                             <img src="/assets/fr.svg" alt="Français" class="flag-icon">
                             Français
                         </a>
@@ -53,8 +54,9 @@
                 </li>
                 
                 <li class="contact">
-                    <a href="" class="btn-contact">
+                    <a href="paginas/contact.html" class="btn-contact">
                         Contacto <i class="fas fa-envelope"></i>
+                        
                     </a>
                 </li>
                 
@@ -71,7 +73,7 @@
               </div>
               <div class="banner">
                 <div class="heading">
-                    <p class="ppttitle" id ="ppttitle">De la logística a la programación: Desarrollando soluciones web full stack</p>
+                    <p class="ppttitle" id ="ppttitle">De la logística a la programación: Desarrollando soluciones tecnológicas</p>
 
                 <div class="Supply-Chain">
                     <span>Supply Chain</span>
@@ -98,19 +100,82 @@
             <div class="picture-profile">
                 <img  class="picture"src="/assets/pictureMRR.png" alt="">
                 
-              </div>
+            </div>
             <h1 class="name">Martin Rivas</h1>
-            <h2 class="title">Supply Chain| WMS Implementation|Team Development |</h2>
-            <h2 class="title"> Coaching | Leadership |Web Desing| Keepcoding & BlueYonder Alumni</h2>
-            <h3 class="Heading"> De la logística a la programación: Desarrollando soluciones web full stack</h3>
-            <h4 ></h4>
+
                 <p class="Description">Con más de 20 años optimizando operaciones logísticas y cadenas de suministro, he decidido aplicar mi experiencia analítica y de resolución de problemas al mundo del desarrollo web. Actualmente me encuentro sumergido en un bootcamp full stack, donde estoy adquiriendo las habilidades necesarias para construir aplicaciones web robustas y escalables. Mi experiencia previa en programación de WMS me ha proporcionado una sólida base en la gestión de datos y la optimización de procesos, lo que me permite aportar una perspectiva única a mis proyectos.</p>
-            <a href="#" class="button">Ver más</a>
+                    
+        </section>
+
+
+        <section class="skills">
+            <div id="skills" class="modal">
+                <div class="modal-contenido">
+                    <a href="#" class="cerrar">&times;</a>
+                    <div class="wrepper">
+                        <label for="">SAP</label>
+                        <div class="progress-bar">
+                            <div class="progress progresssap"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">SAP HANA</label>
+                        <div class="progress-bar">
+                            <div class="progress progresssaphana"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">BlueYonder</label>
+                        <div class="progress-bar">
+                            <div class="progress progressby"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">SQL</label>
+                        <div class="progress-bar">
+                            <div class="progress progresssql"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">Python</label>
+                        <div class="progress-bar">
+                            <div class="progress progresspy"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">JavaScrip</label>
+                        <div class="progress-bar">
+                            <div class="progress progressja"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">HTML</label>
+                        <div class="progress-bar">
+                            <div class="progress progresshtml"></div>
+                        </div>
+                    </div>
+                    <div class="wrepper">
+                        <label for="">CSS</label>
+                        <div class="progress-bar">
+                            <div class="progress progresscss"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/martin-rivas-reynoso" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/martinrivasr" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

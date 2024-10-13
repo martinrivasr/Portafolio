@@ -1,0 +1,205 @@
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.modal:target {
+    display: block; 
+}
+
+.modal-contenido {
+    position: relative;
+    margin: 2% auto;
+    padding: 20px;
+    background-color: white;
+    width: 40%; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: black;
+}
+
+
+.wrepper {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center; 
+}
+
+label {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 500px; 
+    height: 5px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid deepskyblue;
+    padding: 6px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00a8ff;
+    border-radius: 10px;
+    animation: animate 1s linear forwards;
+}
+
+.progresssap {
+    animation: animatesap 1s linear forwards;
+}
+
+.progresssaphana {
+    animation: animatespahana 1s linear forwards;
+}
+
+.progressby {
+    animation: animateby 1s linear forwards;
+}
+
+.progresssql {
+    animation: animatesql 1s linear forwards;
+}
+
+.progresspy {
+    animation: animatepy 1s linear forwards;
+}
+
+.progressja {
+    animation: animateja 1s linear forwards;
+}
+
+.progresshtml {
+    animation: animatehtml 1s linear forwards;
+}
+
+.progresscss {
+    animation: animatecss 1s linear forwards;
+}
+
+@media screen and (max-width: 992px) {
+    .modal-contenido {
+        width: 70%; 
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .modal-contenido {
+        width: 85%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .modal-contenido {
+        width: 90%; 
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal-contenido {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+
+@keyframes animatesap {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes animatespahana {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes animateby {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes animatesql {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes animatepy {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes animateja {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes animatehtml {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes animatecss {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}
