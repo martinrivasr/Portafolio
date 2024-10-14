@@ -11,53 +11,55 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
-    <header class="header">
-        <nav class="navegation">
-            <div class="logo" id="logo">
-                <a href="">
-                    <img class="image" src="assets/logo.png" alt="logo">
+<header class="header">
+    <nav class="navegation">
+        <div class="logo" id="logo">
+            <a href="">
+                <img class="image" src="assets/logo.png" alt="logo">
+            </a>
+        </div>
+        <input type="checkbox" class="toggle-menu" id="toggle">
+        <label for="toggle" class="hamburguer">
+
+        </label>
+
+        <ul class="menu">
+            <li><a href="index.html#presentation">Home</a></li>
+            <li><a href="index.html#about">Acerca de mi</a></li>
+            <li><a href="project.html">Proyectos</a></li>
+            <li><a href="index.html#skills">Habilidades</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">
+                    <i class="fas fa-globe"></i> Idioma
                 </a>
-            </div>
-            <input type="checkbox" class="toggle-menu" id="toggle">
-            <label for="toggle" class="hamburguer">
-
-            </label>
-
-            <ul class="menu">
-                <li><a href="index.html#presentation">Home</a></li>
-                <li><a href="index.html#about">Acerca de mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="index.html#skills">Habilidades</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">
-                        <i class="fas fa-globe"></i> Idioma
+                <div class="dropdown-content">
+                    <a href="#">
+                        <img src="assets/mx.svg" alt="Español" class="flag-icon">
+                        Español
                     </a>
-                    <div class="dropdown-content">
-                        <a href="#">
-                            <img src="assets/mx.svg" alt="Español" class="flag-icon">
-                            Español
-                        </a>
-                        <a href="#">
-                            <img src="assets/us.svg" alt="English" class="flag-icon">
-                            English
-                        </a>
-                        <a href="400.html">
-                            <img src="assets/fr.svg" alt="Français" class="flag-icon">
-                            Français
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="contact">
-                    <a href="contact.html" class="btn-contact">
-                        Contacto <i class="fas fa-envelope"></i>
+                    <a href="video.html">
+                        <img src="assets/us.svg" alt="English" class="flag-icon">
+                        English
                     </a>
-                </li>
-                
-            </ul>
-        </nav>
-    </header>
+                    <a href="400.html">
+                        <img src="assets/fr.svg" alt="Français" class="flag-icon">
+                        Français
+                    </a>
+                </div>
+            </li>
+            
+            <li class="contact">
+                <a href="contact.html" class="btn-contact">
+                    Contacto <i class="fas fa-envelope"></i>
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+<body>
+
     
     
 
@@ -67,95 +69,80 @@
             <div class="project-grid">
                
                 <div class="project-card">
-                    <img src="assets/systemsimg/serie_1.jpg" alt="Proyecto 1">
+                    <img src="assets/proyectos/auge/appsheet.png" alt="Proyecto 1">
                     <h2>Proyecto 1</h2>
-                    <p>Descripción del proyecto 1. Un sistema de gestión de inventarios eficiente.</p>
+                    <p> Un sistema de gestión de inventarios eficiente.</p>
                     <a href="#modal1" class="button">Ver más</a>
                 </div>
                 
                 <div id="modal1" class="modal">
                     <div class="modal-content">
                         <a href="#" class="close">&times;</a>
-                        <h2>Proyecto 1</h2>
-                        <p>Descripción detallada del Proyecto 1. Este sistema de gestión de inventarios incluye...</p>
+                        <h2>Proyecto 1... Concluido</h2>
+                        <p>El sistema de gedtion de inventario, es un sistema que controla las operaciones principales de un almacén, proporcionado control y seguimiento a los pedidos recibidos. </p>
                         <div class="gallery">
                             <a href="#imgmod0101">
-                                <img src="assets/systemsimg/serie_1.jpg" alt="Imagen 1">
+                                <img src="assets/proyectos/auge/01pantallainicio.png" alt="Imagen 1">
                             </a>
-                            <a href="imgmod0102">
-                                <img src="assets/systemsimg/serie_2.jpg" alt="Imagen 2">
+                            <a href="#imgmod0102">
+                                <img src="assets/proyectos/auge/02menuinicio.png" alt="Imagen 2">
                             </a>
-                            <a href="imgmod0103">
-                                <img src="assets/systemsimg/serie_3.jpg" alt="Imagen 3">
+                            <a href="#imgmod0103">
+                                <img src="assets/proyectos/auge/03menuconfiguracion.png" alt="Imagen 3">
                             </a>
-                            <a href="imgmod0104">
-                                <img src="assets/systemsimg/serie_4.jpg" alt="Imagen 4">
+                            <a href="#imgmod0104">
+                                <img src="assets/proyectos/auge/configuracionsys.png" alt="Imagen 4">
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div id="imgmod0101" class="overlay">
-                    <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_1.jpg" alt="Imagen 1 expandida">
+                    <a href="#modal1" class="closeimg">&times;</a>
+                    <img src="assets/proyectos/auge/01pantallainicio.png" alt="Imagen 1 expandida">
                 </div>
                 
                 <div id="imgmod0102" class="overlay">
-                    <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_2.jpg" alt="Imagen 2 expandida">
+                    <a href="#modal1" class="closeimg">&times;</a>
+                    <img src="assets/proyectos/auge/02menuinicio.png" alt="Imagen 2 expandida">
                 </div>
                 
                 <div id="imgmod0103" class="overlay">
-                    <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_3.jpg" alt="Imagen 3 expandida">
+                    <a href="#modal1" class="closeimg">&times;</a>
+                    <img src="assets/proyectos/auge/03menuconfiguracion.png" alt="Imagen 3 expandida">
                 </div>
                 
                 <div id="imgmod0104" class="overlay">
-                    <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_4.jpg" alt="Imagen 4 expandida">
+                    <a href="#modal1" class="closeimg">&times;</a>
+                    <img src="assets/proyectos/auge/configuracionsys.png" alt="Imagen 4 expandida">
                 </div>
                 
                 <div class="project-card">
-                    <img src="assets/systemsimg/serie_2.jpg" alt="Proyecto 2">
+                    <img src="assets/tienda/detalle1.png" alt="Proyecto 2">
                     <h2>Proyecto 2</h2>
-                    <p>Descripción del proyecto 2. Aplicación web para seguimiento de envíos.</p>
+                    <p>Plataforma de comercio electrónico. </p>
                     <a href="#modal2" class="button">Ver más</a>
                 </div>
-                <!--
-                <div id="modal2" class="modal">
-                    <div class="modal-content">
-                        <a href="#" class="close">&times;</a>
-                        <h2>Proyecto 2</h2>
-                        <p>Descripción detallada del Proyecto 2. Esta aplicación permite...</p>
-                        <div class="gallery">
-                            <img src="/assets/systemsimg/serie_1.jpg" alt="Imagen 1">
-                            <img src="/assets/systemsimg/serie_2.jpg" alt="Imagen 2">
-                            <img src="/assets/systemsimg/serie_3.jpg" alt="Imagen 3">
-                            <img src="/assets/systemsimg/serie_4.jpg" alt="Imagen 4">
-                        </div>
-                    </div>
-                </div>
-                 -->
 
                 <div id="modal2" class="modal">
                     <div class="modal-content">
                         <a href="#" class="close">&times;</a>
-                        <h2>Proyecto 2</h2>
-                        <p>Descripción detallada del Proyecto 2. Esta aplicación permite...</p>
+                        <h2>Proyecto 2... en progreso</h2>
+                        <p>Desarrollo de una tienda on-line. Esta tienda incluye la integracion del back-end con el front-end. </p>
                         
                         
                         <div class="gallery">
                             <a href="#img1">
-                                <img src="assets/systemsimg/serie_1.jpg" alt="Imagen 1">
+                                <img src="assets/tienda/login.png" alt="Imagen 1">
                             </a>
                             <a href="#img2">
-                                <img src="assets/systemsimg/serie_2.jpg" alt="Imagen 2">
+                                <img src="assets/tienda/detalle.png" alt="Imagen 2">
                             </a>
                             <a href="#img3">
-                                <img src="assets/systemsimg/serie_3.jpg" alt="Imagen 3">
+                                <img src="assets/tienda/item.png" alt="Imagen 3">
                             </a>
                             <a href="#img4">
-                                <img src="assets/systemsimg/serie_4.jpg" alt="Imagen 4">
+                                <img src="assets/tienda/my_orders.png" alt="Imagen 4">
                             </a>
                         </div>
                     </div>
@@ -164,28 +151,28 @@
                 
                 <div id="img1" class="overlay">
                     <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_1.jpg" alt="Imagen 1 expandida">
+                    <img src="assets/tienda/login.png" alt="Imagen 1 expandida">
                 </div>
                 
                 <div id="img2" class="overlay">
                     <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_2.jpg" alt="Imagen 2 expandida">
+                    <img src="assets/tienda/detalle.png" alt="Imagen 2 expandida">
                 </div>
                 
                 <div id="img3" class="overlay">
                     <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_3.jpg" alt="Imagen 3 expandida">
+                    <img src="assets/tienda/item.png" alt="Imagen 3 expandida">
                 </div>
                 
                 <div id="img4" class="overlay">
                     <a href="#modal2" class="closeimg">&times;</a>
-                    <img src="assets/systemsimg/serie_4.jpg" alt="Imagen 4 expandida">
+                    <img src="assets/tienda/my_orders.png" alt="Imagen 4 expandida">
                 </div>
 
                 <div class="project-card">
                     <img src="assets/systemsimg/serie_3.jpg" alt="Proyecto 3">
                     <h2>Proyecto 3</h2>
-                    <p>Descripción del proyecto 3. Plataforma de comercio electrónico.</p>
+                    <p>Descripción del proyecto 3</p>
                     <a href="#modal3" class="button">Ver más</a>
                 </div>
                 
@@ -193,7 +180,7 @@
                     <div class="modal-content">
                         <a href="#" class="close">&times;</a>
                         <h2>Proyecto 3</h2>
-                        <p>Descripción detallada del Proyecto 3. Esta plataforma permite...</p>
+                        <p>Descripción del Proyecto 3.</p>
                         <div class="gallery">
                             <img src="assets/systemsimg/serie_1.jpg" alt="Imagen 1">
                             <img src="assets/systemsimg/serie_2.jpg" alt="Imagen 2">
@@ -207,7 +194,7 @@
                 <div class="project-card">
                     <img src="assets/systemsimg/serie_4.jpg" alt="Proyecto 4">
                     <h2>Proyecto 4</h2>
-                    <p>Descripción del proyecto 4. Un sistema CRM personalizado.</p>
+                    <p>Descripción del proyecto 4.</p>
                     <a href="#modal4" class="button">Ver más</a>
                 </div>
                 
@@ -215,12 +202,12 @@
                     <div class="modal-content">
                         <a href="#" class="close">&times;</a>
                         <h2>Proyecto 4</h2>
-                        <p>Descripción detallada del Proyecto 4. Este sistema CRM permite...</p>
+                        <p>Descripcióndel Proyecto 4.</p>
                         <div class="gallery">
                             <img src="assets/systemsimg/serie_1.jpg" alt="Imagen 1">
                             <img src="assets/systemsimg/serie_2.jpg" alt="Imagen 2">
                             <img src="assets/systemsimg/serie_3.jpg" alt="Imagen 3">
-                            <img src="assets/systemsimg/serie_4.jpg" alt="Imagen 4">
+                            <img src="/assets/systemsimg/serie_4.jpg" alt="Imagen 4">
                         </div>
                     </div>
                 </div>

@@ -11,53 +11,54 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
-    <header class="header">
-        <nav class="navegation">
-            <div class="logo" id="logo">
-                <a href="">
-                    <img class="image" src="assets/logo.png" alt="logo">
+<header class="header">
+    <nav class="navegation">
+        <div class="logo" id="logo">
+            <a href="">
+                <img class="image" src="assets/logo.png" alt="logo">
+            </a>
+        </div>
+        <input type="checkbox" class="toggle-menu" id="toggle">
+        <label for="toggle" class="hamburguer">
+
+        </label>
+
+        <ul class="menu">
+            <li><a href="index.html#presentation">Home</a></li>
+            <li><a href="index.html#about">Acerca de mi</a></li>
+            <li><a href="project.html">Proyectos</a></li>
+            <li><a href="index.html#skills">Habilidades</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">
+                    <i class="fas fa-globe"></i> Idioma
                 </a>
-            </div>
-            <input type="checkbox" class="toggle-menu" id="toggle">
-            <label for="toggle" class="hamburguer">
-
-            </label>
-
-            <ul class="menu">
-                <li><a href="index.html#presentation">Home</a></li>
-                <li><a href="index.html#about">Acerca de mi</a></li>
-                <li><a href="index.html#project">Proyectos</a></li>
-                <li><a href="index.html#skills">Habilidades</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">
-                        <i class="fas fa-globe"></i> Idioma
+                <div class="dropdown-content">
+                    <a href="#">
+                        <img src="assets/mx.svg" alt="Español" class="flag-icon">
+                        Español
                     </a>
-                    <div class="dropdown-content">
-                        <a href="#">
-                            <img src="assets/mx.svg" alt="Español" class="flag-icon">
-                            Español
-                        </a>
-                        <a href="#">
-                            <img src="assets/us.svg" alt="English" class="flag-icon">
-                            English
-                        </a>
-                        <a href="400.html">
-                            <img src="assets/fr.svg" alt="Français" class="flag-icon">
-                            Français
-                        </a>
-                    </div>
-                </li>
-                
-                <li class="contact">
-                    <a href="#" class="btn-contact">
-                        Contacto <i class="fas fa-envelope"></i>
+                    <a href="video.html">
+                        <img src="assets/us.svg" alt="English" class="flag-icon">
+                        English
                     </a>
-                </li>
-                
-            </ul>
-        </nav>
-    </header>
+                    <a href="400.html">
+                        <img src="assets/fr.svg" alt="Français" class="flag-icon">
+                        Français
+                    </a>
+                </div>
+            </li>
+            
+            <li class="contact">
+                <a href="contact.html" class="btn-contact">
+                    Contacto <i class="fas fa-envelope"></i>
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+<body>
 
     <main>
         <form method="POST">

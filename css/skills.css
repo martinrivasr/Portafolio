@@ -19,8 +19,10 @@
     padding: 20px;
     background-color: white;
     width: 40%; 
+    
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: url("/assets/ondas.jpg");
 }
 
 .cerrar {
@@ -50,7 +52,7 @@
 
 label {
     font-size: 1.2rem;
-    color: black;
+    color: var(--menu-text-color);
     margin-bottom: 5px;
     text-align: center;
 }

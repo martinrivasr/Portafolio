@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url("assets/flower-dots.svg");
+    background: url("/assets/flower-dots.svg");
 }
 
 main {
@@ -14,6 +14,7 @@ main {
     align-items: flex-start;
     min-height: 100vh;
     padding-top: 80px;
+
 }
 
 form {
